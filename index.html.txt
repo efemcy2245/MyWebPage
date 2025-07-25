@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyWebPage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>About Me</h1>
+  <p>
+    I have a strong inner drive to learn and master every aspect of the job—
+    what I would describe as an internal hunger, an endless source of motivation.
+  </p>
+  <p>
+    I enjoy diving deep into topics and learning independently to build broad, cross-disciplinary knowledge.
+  </p>
+  <p>
+    You can find some of my projects at the following link:
+    <a href="https://github.com/efemoy2245" target="_blank">https://github.com/efemoy2245</a>.
+    Over the past month, I’ve taken the time to organize my thoughts on several key topics.
+    I’ve shared what I’ve learned by publishing my insights and perspectives.
+  </p>
+  <p>
+    This is a great opportunity for me—not only to demonstrate what I’m capable of,
+    but also to leave a piece of myself in the work.
+  </p>
+</body>
+</html>
