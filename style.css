@@ -177,3 +177,16 @@ section {
     border-radius: 0 0 20px 20px;
   }
 }
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #e0f7fa; /* Optional: same as body or a contrasting color */
+}
+
+.footer p {
+  margin: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 1.6;
+}
