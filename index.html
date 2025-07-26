@@ -31,7 +31,7 @@
       
       <div class="menu-item" onclick="toggle('CV-sub')">🧾 My CV</div>
       <div id="CV-sub" class="subfolder">
-        <div class="menu-item" onclick="showContent('Resume.docx contentZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ')">📄 Personal CV</div>
+        <div class="menu-item" onclick="loadContentFromFile('cv-content.html')">📄 Personal CV</div>
       </div>
 
 
@@ -73,5 +73,17 @@
   </p>
 </footer>
   
+
+<!-- BLOCK not rendered in the HTML file-->
+ <!-- This can be anywhere on the page -->
+<div id="cv-content" style="display: none;">
+  <h2>My CV</h2>
+  <p>This is the detailed content of my curriculum vitae.</p>
+</div>
+
+
+
+
+
 </body>
 </html>

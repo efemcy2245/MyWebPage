@@ -18,3 +18,27 @@ function showContent(content) {
     `;
   }
 }
+
+function showContentFromDiv(sourceDivId) {
+  const source = document.getElementById(sourceDivId);
+  const target = document.getElementById("content");
+
+  if (source && target) {
+    target.innerHTML = source.innerHTML;
+  }
+}
+
+function loadContentFromFile(filePath) {
+  fetch(filePath)
+    .then(response => {
+      if (!response.ok) throw new Error('Failed to load content');
+      return response.text();
+    })
+    .then(html => {
+      document.getElementById('content').innerHTML = html;
+    })
+    .catch(error => {
+      console.error(error);
+      document.getElementById('content').innerHTML = '<p>Error loading content.</p>';
+    });
+}
