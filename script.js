@@ -1,39 +1,20 @@
 function toggle(id) {
-  const el = document.getElementById(id);
-  el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+  const element = document.getElementById(id);
+  element.style.display = (element.style.display === 'none' || element.style.display === '') ? 'block' : 'none';
 }
 
-
-
-
-function loadExternalHTML(filePath, targetElementId) {
-  const target = document.getElementById(targetElementId);
-
-  fetch(filePath)
+function loadExternalHTML(filename) {
+  fetch(filename)
     .then(response => {
       if (!response.ok) {
-        throw new Error(`Failed to fetch ${filePath}: ${response.statusText}`);
+        throw new Error('File not found: ' + filename);
       }
       return response.text();
     })
-    .then(html => {
-      target.innerHTML = html;
+    .then(data => {
+      document.getElementById("main-content").innerHTML = data;
     })
     .catch(error => {
-      target.innerHTML = `<p>Error loading content: ${error.message}</p>`;
+      document.getElementById("main-content").innerHTML = `<p style="color:red;">${error.message}</p>`;
     });
-}
-
-function showContent(file) {
-    fetch(file)
-        .then(response => {
-            if (!response.ok) throw new Error("Could not load content.");
-            return response.text();
-        })
-        .then(html => {
-            document.getElementById("main-content").innerHTML = html;
-        })
-        .catch(err => {
-            document.getElementById("main-content").innerHTML = `<p>Error: ${err.message}</p>`;
-        });
 }
