@@ -123,6 +123,11 @@ section {
   background-color: #f9f9f9;
 }
 
+.content p {
+  margin-bottom: 1em;  /* Or more if needed */
+  line-height: 1.6;    /* Improves readability */
+}
+
 /*For Footer*/
 /* footer settings   */
 .footer {
