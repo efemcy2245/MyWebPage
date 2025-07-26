@@ -32,25 +32,31 @@
       <div class="sidebar">
         <div class="menu-item" onclick="toggle('CV-sub')">🧾 CV</div>
         <div id="CV-sub" class="subfolder">
-          <div class="menu-item" onclick="loadExternalHTML('cv-content.html')">📄 Personal CV</div>
+          <div class="menu-item" onclick="loadExternalHTML('secondPage/cv-content.html')">📄 Personal CV</div>
         </div>
 
         <div class="menu-item" onclick="toggle('projects-sub')">📁 Projects</div>
         <div id="projects-sub" class="subfolder">
-          <div class="menu-item" onclick="loadExternalHTML('project.html')">📄 ProjectReport.pdf</div>
+          <div class="menu-item" onclick="loadExternalHTML('secondPage/project.html')">📄 ProjectReport.pdf</div>
         </div>
 
         <div class="menu-item" onclick="toggle('dishes-sub')">🍽️ Dishes</div>
         <div id="dishes-sub" class="subfolder">
-          <div class="menu-item" onclick="loadExternalHTML('dish.html')">🖼️ .jpg</div>
+          <div class="menu-item" onclick="loadExternalHTML('secondPage/dish.html')">🖼️ .jpg</div>
         </div>
 
-        <div class="menu-item" onclick="toggle('drawings-sub')">🖼️ Drawings</div>
+        <div class="menu-item" onclick="toggle('drawings')">🖼️ Drawings</div>
         <div id="drawings-sub" class="subfolder">
-          <div class="menu-item" onclick="loadExternalHTML('image.html')">🖼️ .jpg</div>
+          <div class="menu-item" onclick="loadExternalHTML('secondPage/image.html')">🖼️ .jpg</div>
         </div>
 
-        <div class="menu-item return-button" onclick="loadExternalHTML('home-content.html')">About Me</div>
+        <div class="menu-item" onclick="toggle('contact')"> Contact</div>
+        <div id="contact" class="subfolder">
+          <div class="menu-item" onclick="loadExternalHTML('secondPage/image.html')">🖼️ .jpg</div>
+        </div>
+
+
+        <div class="menu-item return-button" onclick="loadExternalHTML('secondPage/home-content.html')">About Me</div> <!-- Bottom About me-->
       </div>
 
       <div class="content" id="content">
@@ -101,5 +107,7 @@
   </p>
 </footer>
   
+
+<script src="script.js"></script>
 </body>
 </html>
