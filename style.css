@@ -13,12 +13,6 @@ body {
   width: 100%;
 }
 
-/* General section styling */
-section {
-  display: flex;
-  align-items: flex-start; /* Align items at the top */
-}
-
 /* Main section with background image */
 #main {
   background-image: url('images/background.png');
@@ -56,74 +50,18 @@ section {
   text-align: center;
 }
 
-/* Additional image section styles (if used) */
-.image-section img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover; /* crop to fit square if needed */
-  border-radius: 8px;
-}
 
-/* Text section style */
-.text-section {
-  max-width: 600px;
-  color: white; /* adapt based on background */
-}
-
-/* Container for sidebar and content */
-.container {
+/* General section styling */
+section {
   display: flex;
-  height: 600px;
-  width: 100%; /* Full width */
-  border: 3px solid black;
-  border-radius: 20px;
-  box-sizing: border-box; /* Padding/border included in size */
-}
-
-/* Sidebar styles */
-.sidebar {
-  width: 250px; /* Fixed width */
-  background-color: #222;
-  color: white;
-  padding: 20px;
-  box-sizing: border-box;
-  border-right: 2px solid #444;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  overflow-y: auto;
-}
-
-/* Content area */
-.content {
-  flex: 1; /* Fills remaining horizontal space */
-  padding: 30px;
-  /* background-color: #f0f0f0; /* Light gray */ 
-  /* color: #000; */
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  overflow-y: auto;
-  box-sizing: border-box;
-}
-
-/* Menu items */
-.menu-item {
-  cursor: pointer;
-  padding: 8px 12px;
-  border-radius: 5px;
-  margin: 4px 0;
-}
-
-.menu-item:hover {
-  background-color: #ddd;
-}
-
-/* Subfolders are hidden by default */
-.subfolder {
-  margin-left: 20px;
-  display: none;
+  align-items: flex-start; /* Align items at the top */
 }
 
 
+
+
+
+/* footer settings   */
 .footer {
   text-align: center;
   padding: 10px;
@@ -135,74 +73,4 @@ section {
   font-size: 14px;
   cursor: pointer;
   line-height: 1.6;
-}
-
-.return-button {
-  margin-top: 20px;
-  background-color: #444;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-.return-button:hover {
-  background-color: #666;
-}
-
-
-/* Responsive styles for mobile */
-@media (max-width: 600px) {
-  /* Stack sections vertically */
-  section {
-    flex-direction: column;
-  }
-
-  /* Adjust main section */
-  #main {
-    height: auto; /* Let it expand */
-    padding: 10px;
-  }
-
-  /* Image block full width */
-  .image-block {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  /* Image scales properly */
-  .square-image {
-    height: auto;
-    max-width: 100%;
-  }
-
-  /* Text block adjustments */
-  .text-block {
-    margin-left: 0;
-    text-align: left;
-    padding: 10px 0;
-  }
-
-  /* Container stacks sidebar and content */
-  .container {
-    flex-direction: column;
-    height: auto; /* Remove fixed height */
-  }
-
-  /* Sidebar full width */
-  .sidebar {
-    width: 100%;
-    height: auto;
-    border-radius: 20px 20px 0 0;
-    border-right: none;
-    border-bottom: 2px solid #444;
-  }
-
-  /* Content full width */
-  .content {
-    width: 100%;
-    padding: 15px;
-    border-radius: 0 0 20px 20px;
-  }
 }

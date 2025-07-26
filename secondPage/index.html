@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <title>PolymophicEngine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+
+<!-- This is the header with images-->
+<section id="main">
+  <div class="image-block">
+    <img src="images/io-robot.png" alt="Image" class="square-image">
+  </div>
+  <div class="text-block">
+    <h2>Welcome to my personal WebSite</h2>
+    <p>
+      Quote: "A gem cannot be polished without friction, nor a men perfected without trials."
+      Seneca 
+    </p>
+  </div>
+</section>
+
+<!--you can check the sub folders-->
+<section id="core">
+  <div class="container">
+    <div class="sidebar">
+      <div class="menu-item" onclick="toggle('CV-sub')">🧾 CV</div>
+
+      <div id="CV-sub" class="subfolder">
+        <div class="menu-item" onclick="loadExternalHTML('cv-content.html')">📄 Personal CV</div>
+      </div>
+
+      <div class="menu-item" onclick="toggle('projects-sub')">📁 Projects</div>
+      <div id="projects-sub" class="subfolder">
+        <div class="menu-item" onclick="loadExternalHTML('project.html')">📄 ProjectReport.pdf</div>
+      </div>
+
+      <div class="menu-item" onclick="toggle('dishes-sub')">🍽️ Dishes</div>
+      <div id="dishes-sub" class="subfolder">
+        <div class="menu-item" onclick="loadExternalHTML('dish.html')">🖼️.jpg</div>
+      </div>
+
+      <div class="menu-item" onclick="toggle('drawings-sub')">🖼️ Drawings</div>
+      <div id="drawings-sub" class="subfolder">
+        <div class="menu-item" onclick="loadExternalHTML('image.html')">🖼️.jpg</div>
+      </div>
+
+      <div class="menu-item return-button" onclick="loadExternalHTML('home-content.html')">About Me</div>  
+    </div>
+
+  <div class="home-content" id="content">
+      <h2>About me</h2>
+      <p>
+      I have a strong inner drive to learn and master every aspect of the job—what I would describe as an internal hunger, an endless source of motivation. I enjoy diving deep into topics and learning independently to build broad, cross-disciplinary knowledge. You can find some of my projects at the following link:
+      <a href="https://efemcy2245.github.io/ForumMachineLearning/" target="_blank" rel="noopener noreferrer">
+          https://efemcy2245.github.io/ForumMachineLearning/
+      </a>.
+      Over the past month, I’ve taken the time to organize my thoughts on several key topics. I’ve shared what I’ve learned by publishing my insights and perspectives.
+      This is a great opportunity for me—not only to demonstrate what I’m capable of, but also to leave a piece of myself in the work.
+      </p>
+  </div>
+
+  </div>
+</section>
+
+
+
+<!--footer-->
+<footer class="footer">
+  <hr>
+  <p onclick="alert('Feel free to contact me at my email address');">
+    <span>Tech Support: polymorphicengine19@gmail.com</span><br>
+    <span>© 2025. All rights reserved.</span>
+  </p>
+</footer>
+  
+</body>
+</html>
