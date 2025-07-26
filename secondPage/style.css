@@ -58,8 +58,6 @@ section {
 }
 
 
-
-
 /* Container for sidebar and content */
 .container {
   display: flex;
@@ -113,6 +111,20 @@ section {
   margin-left: 20px; /* indent submenu */
 }
 
+.return-button {
+  margin-top: 20px;
+  background-color: #444;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.return-button:hover {
+  background-color: #666;
+}
+
 
 
 /* footer settings   */
@@ -127,20 +139,6 @@ section {
   font-size: 14px;
   cursor: pointer;
   line-height: 1.6;
-}
-
-.return-button {
-  margin-top: 20px;
-  background-color: #444;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-.return-button:hover {
-  background-color: #666;
 }
 
 

@@ -74,3 +74,7 @@ section {
   cursor: pointer;
   line-height: 1.6;
 }
+
+#web_page span {
+  margin-right: 20px;
+}
