@@ -97,8 +97,8 @@ section {
 .content {
   flex: 1; /* Fills remaining horizontal space */
   padding: 30px;
-  background-color: #f0f0f0; /* Light gray */
-  color: #000;
+  /* background-color: #f0f0f0; /* Light gray */ 
+  /* color: #000; */
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   overflow-y: auto;
