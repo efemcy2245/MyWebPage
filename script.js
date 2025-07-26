@@ -23,3 +23,17 @@ function loadExternalHTML(filePath, targetElementId) {
       target.innerHTML = `<p>Error loading content: ${error.message}</p>`;
     });
 }
+
+function showContent(file) {
+    fetch(file)
+        .then(response => {
+            if (!response.ok) throw new Error("Could not load content.");
+            return response.text();
+        })
+        .then(html => {
+            document.getElementById("main-content").innerHTML = html;
+        })
+        .catch(err => {
+            document.getElementById("main-content").innerHTML = `<p>Error: ${err.message}</p>`;
+        });
+}
