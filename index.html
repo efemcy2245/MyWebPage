@@ -28,6 +28,14 @@
 <section> 
 <div class="container">
     <div class="sidebar">
+      
+      <div class="menu-item" onclick="toggle('CV-sub')">📁 My CV</div>
+      <div id="CV-sub" class="subfolder">
+        <div class="menu-item" onclick="showContent('Resume.docx contentZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ')">📄 Personal CV</div>
+      </div>
+
+
+
       <div class="menu-item" onclick="toggle('documents-sub')">📁 Documents</div>
       <div id="documents-sub" class="subfolder">
         <div class="menu-item" onclick="showContent('Resume.docx content')">📄 Resume.docx</div>
@@ -36,22 +44,18 @@
 
       <div class="menu-item" onclick="toggle('images-sub')">📁 Images</div>
       <div id="images-sub" class="subfolder">
-        <div class="menu-item" onclick="showContent('Photo1.jpg content')">🖼️ Photo1.jpg</div>
+        <div class="menu-item" onclick="showContent('images/background.jpeg content')">🖼️ Photo1.jpg</div>
         <div class="menu-item" onclick="showContent('Logo.png content')">🖼️ Logo.png</div>
       </div>
 
-      <!--
-      <div class="menu-item" onclick="toggle('music-sub')">📁 Music</div>
-      <div id="music-sub" class="subfolder">
-        <div class="menu-item" onclick="showContent('Track1.mp3 content')">🎵 Track1.mp3</div>
-        <div class="menu-item" onclick="showContent('Track2.mp3 content')">🎵 Track2.mp3</div>
-      </div>
-      -->
+      <!-- Return button -->
+      <div class="menu-item return-button" onclick="showContent('home')">🔙 Return</div>  
+
     </div>
 
     <div class="content" id="content">
-      <h2>Welcome</h2>
-      <p>Select a file to view its content.</p>
+      <h2>About me</h2>
+      <p>Description of my-self.</p>
     </div>
   </div>
   <script src="script.js"></script>
@@ -68,3 +72,11 @@
   
 </body>
 </html>
+
+      <!--
+      <div class="menu-item" onclick="toggle('music-sub')">📁 Music</div>
+      <div id="music-sub" class="subfolder">
+        <div class="menu-item" onclick="showContent('Track1.mp3 content')">🎵 Track1.mp3</div>
+        <div class="menu-item" onclick="showContent('Track2.mp3 content')">🎵 Track2.mp3</div>
+      </div>
+      -->

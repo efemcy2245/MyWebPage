@@ -3,9 +3,18 @@ function toggle(id) {
   el.style.display = (el.style.display === 'block') ? 'none' : 'block';
 }
 
-function showContent(text) {
-  document.getElementById('content').innerHTML = `
-    <h2>File Content</h2>
-    <p>${text}</p>
-  `;
+function showContent(content) {
+  const contentDiv = document.getElementById("content");
+
+  if (content === 'home') {
+    contentDiv.innerHTML = `
+      <h2>About me</h2>
+      <p>Description of my-self.</p>
+    `;
+  } else {
+    contentDiv.innerHTML = `
+      <h2>File Preview</h2>
+      <p>${content}</p>
+    `;
+  }
 }

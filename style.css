@@ -123,6 +123,35 @@ section {
   display: none;
 }
 
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #e0f7fa; /* Optional: same as body or a contrasting color */
+}
+
+.footer p {
+  margin: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 1.6;
+}
+
+.return-button {
+  margin-top: 20px;
+  background-color: #444;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.return-button:hover {
+  background-color: #666;
+}
+
+
 /* Responsive styles for mobile */
 @media (max-width: 600px) {
   /* Stack sections vertically */
@@ -176,17 +205,4 @@ section {
     padding: 15px;
     border-radius: 0 0 20px 20px;
   }
-}
-
-.footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #e0f7fa; /* Optional: same as body or a contrasting color */
-}
-
-.footer p {
-  margin: 5px;
-  font-size: 14px;
-  cursor: pointer;
-  line-height: 1.6;
 }
