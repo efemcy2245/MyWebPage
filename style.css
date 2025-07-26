@@ -1,3 +1,11 @@
+/* Reset & base styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: Arial, sans-serif;
+}
+
 /* Set full-page background color to ice */
 body {
   background-color: #e0f7fa; /* Ice blue */
@@ -5,14 +13,16 @@ body {
   width: 100%;
 }
 
+/* General section styling */
 section {
   display: flex;
   align-items: flex-start; /* Align items at the top */
 }
 
+/* Main section with background image */
 #main {
   background-image: url('images/background.png');
-  background-size: 100% 100%;       /* Stretch to fill the box */
+  background-size: 100% 100%; /* Stretch to fill the box */
   background-position: center;
   background-repeat: no-repeat;
   height: 300px;
@@ -25,12 +35,13 @@ section {
   overflow: hidden;
 }
 
-
+/* Image block inside main */
 .image-block {
   width: 200px;
   margin-left: 25px; /* Stick to the left */
 }
 
+/* Image styling */
 .square-image {
   width: 100%;
   height: 200px;
@@ -38,22 +49,14 @@ section {
   object-fit: cover;
 }
 
+/* Text block beside image */
 .text-block {
   flex: 1; /* Take up remaining space */
   margin-left: 20px; /* Space between image and text */
   text-align: center;
 }
-/*
-.square-image {
-  width: 200px;
-  height: 200px;
-  flex-shrink: 0;           
-  border-radius: 8px;        
-  margin-left: 0;            
-}
-*/
 
-/* Image section */
+/* Additional image section styles (if used) */
 .image-section img {
   width: 200px;
   height: 200px;
@@ -61,24 +64,25 @@ section {
   border-radius: 8px;
 }
 
-/* Text section */
+/* Text section style */
 .text-section {
   max-width: 600px;
   color: white; /* adapt based on background */
 }
 
+/* Container for sidebar and content */
 .container {
   display: flex;
   height: 600px;
-  width: 100%;              /* Make it span full width */
+  width: 100%; /* Full width */
   border: 3px solid black;
   border-radius: 20px;
-  box-sizing: border-box;   /* Ensures padding/border included in size */
+  box-sizing: border-box; /* Padding/border included in size */
 }
 
-/* Sidebar (fixed width) */
+/* Sidebar styles */
 .sidebar {
-  width: 250px;                /* Or adjust as needed */
+  width: 250px; /* Fixed width */
   background-color: #222;
   color: white;
   padding: 20px;
@@ -89,33 +93,19 @@ section {
   overflow-y: auto;
 }
 
-/* Content (fills remaining space) */
+/* Content area */
 .content {
-  flex: 1;                     /* Fills remaining horizontal space */
+  flex: 1; /* Fills remaining horizontal space */
   padding: 30px;
-  background-color: #f4f4f4;
+  background-color: #f0f0f0; /* Light gray */
   color: #000;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   overflow-y: auto;
   box-sizing: border-box;
-  background-color: #f0f0f0; /* light gray, you can change this to any color */
-
 }
 
-/*.sidebar {
-  width: 300px;
-  background-color: #f4f4f4;
-  padding: 20px;
-  overflow-y: auto;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-}
-.content {
-  flex: 1;
-  padding: 20px;
-}  
-*/
-
+/* Menu items */
 .menu-item {
   cursor: pointer;
   padding: 8px 12px;
@@ -127,7 +117,63 @@ section {
   background-color: #ddd;
 }
 
+/* Subfolders are hidden by default */
 .subfolder {
   margin-left: 20px;
   display: none;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 600px) {
+  /* Stack sections vertically */
+  section {
+    flex-direction: column;
+  }
+
+  /* Adjust main section */
+  #main {
+    height: auto; /* Let it expand */
+    padding: 10px;
+  }
+
+  /* Image block full width */
+  .image-block {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* Image scales properly */
+  .square-image {
+    height: auto;
+    max-width: 100%;
+  }
+
+  /* Text block adjustments */
+  .text-block {
+    margin-left: 0;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  /* Container stacks sidebar and content */
+  .container {
+    flex-direction: column;
+    height: auto; /* Remove fixed height */
+  }
+
+  /* Sidebar full width */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+    border-right: none;
+    border-bottom: 2px solid #444;
+  }
+
+  /* Content full width */
+  .content {
+    width: 100%;
+    padding: 15px;
+    border-radius: 0 0 20px 20px;
+  }
 }
