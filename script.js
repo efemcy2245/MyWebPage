@@ -31,14 +31,16 @@ function showContentFromDiv(sourceDivId) {
 function loadContentFromFile(filePath) {
   fetch(filePath)
     .then(response => {
-      if (!response.ok) throw new Error('Failed to load content');
+      if (!response.ok) {
+        throw new Error('Failed to load file: ' + response.statusText);
+      }
       return response.text();
     })
-    .then(html => {
-      document.getElementById('content').innerHTML = html;
+    .then(data => {
+      document.getElementById('content').innerHTML = data;
     })
     .catch(error => {
-      console.error(error);
-      document.getElementById('content').innerHTML = '<p>Error loading content.</p>';
+      document.getElementById('content').innerHTML =
+        '<p style="color:red;">Error loading content: ' + error.message + '</p>';
     });
 }
