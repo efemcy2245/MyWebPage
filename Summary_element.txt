@@ -1,0 +1,32 @@
+  <!-- 
+  Meta  Metadata is data about the document that is not displayed 
+  on the page but is used by browsers, search engines, and other web services.
+  
+  name="viewport" - Tells the browser that the metadata in the content attribute
+                   is related to the viewport — the user's visible area of a web page.
+  
+  content="width=device-width, initial-scale=1" 
+  width=device-width    Sets the width of the viewport to be equal to the device’s screen width.
+                        This ensures the layout adjusts properly on different screen sizes (phones, tablets, desktops).
+  initial-scale=1       Sets the initial zoom level when the page is first loaded.
+  Why It's Important:
+  Without this tag, mobile browsers might scale your page down to fit a default width (often 980px), 
+  making content tiny and unreadable.
+  With this tag, the layout becomes fluid and adaptable to different screen sizes, 
+  which is essential for a mobile-friendly and responsive website.
+  -->
+
+<!-- 
+<link rel="stylesheet" href="style.css" />
+is used to link an external CSS (Cascading Style Sheets) file to your HTML document.
+
+rel="stylesheet" 	Specifies the relationship between the HTML and the linked file 
+                    — here, it tells the browser this file is a stylesheet.
+
+href="style.css"    The path to the external CSS file. This can be a relative path 
+(as in this case) or an absolute URL (e.g., https://...).
+
+-->
+
+
+
