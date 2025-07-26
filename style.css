@@ -1,14 +1,133 @@
+/* Set full-page background color to ice */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #e0f7fa; /* Ice blue */
+  height: 100vh;
+  width: 100%;
 }
 
-a {
-  color: #1a0dab;
-  text-decoration: underline;
+section {
+  display: flex;
+  align-items: flex-start; /* Align items at the top */
+}
+
+#main {
+  background-image: url('images/background.png');
+  background-size: 100% 100%;       /* Stretch to fill the box */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+
+.image-block {
+  width: 200px;
+  margin-left: 25px; /* Stick to the left */
+}
+
+.square-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.text-block {
+  flex: 1; /* Take up remaining space */
+  margin-left: 20px; /* Space between image and text */
+  text-align: center;
+}
+/*
+.square-image {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;           
+  border-radius: 8px;        
+  margin-left: 0;            
+}
+*/
+
+/* Image section */
+.image-section img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* crop to fit square if needed */
+  border-radius: 8px;
+}
+
+/* Text section */
+.text-section {
+  max-width: 600px;
+  color: white; /* adapt based on background */
+}
+
+.container {
+  display: flex;
+  height: 600px;
+  width: 100%;              /* Make it span full width */
+  border: 3px solid black;
+  border-radius: 20px;
+  box-sizing: border-box;   /* Ensures padding/border included in size */
+}
+
+/* Sidebar (fixed width) */
+.sidebar {
+  width: 250px;                /* Or adjust as needed */
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 2px solid #444;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow-y: auto;
+}
+
+/* Content (fills remaining space) */
+.content {
+  flex: 1;                     /* Fills remaining horizontal space */
+  padding: 30px;
+  background-color: #f4f4f4;
+  color: #000;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  background-color: #f0f0f0; /* light gray, you can change this to any color */
+
+}
+
+/*.sidebar {
+  width: 300px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+.content {
+  flex: 1;
+  padding: 20px;
+}  
+*/
+
+.menu-item {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin: 4px 0;
+}
+
+.menu-item:hover {
+  background-color: #ddd;
+}
+
+.subfolder {
+  margin-left: 20px;
+  display: none;
 }
