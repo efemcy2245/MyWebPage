@@ -7,17 +7,28 @@ function showContent(content) {
   const contentDiv = document.getElementById("content");
 
   if (content === 'home') {
-    contentDiv.innerHTML = `
-      <h2>About me</h2>
-      <p>Description of my-self.</p>
-    `;
+    // Load external HTML file for "home"
+    fetch('home-content.html')
+      .then(response => {
+        if (!response.ok) throw new Error('Network response was not ok');
+        return response.text();
+      })
+      .then(html => {
+        contentDiv.innerHTML = html;
+      })
+      .catch(error => {
+        contentDiv.innerHTML = `<p>Error loading content: ${error.message}</p>`;
+      });
   } else {
+    // For other contents, just insert the text
     contentDiv.innerHTML = `
       <h2>File Preview</h2>
       <p>${content}</p>
     `;
   }
 }
+
+
 
 function showContentFromDiv(sourceDivId) {
   const source = document.getElementById(sourceDivId);
