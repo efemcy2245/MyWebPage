@@ -66,7 +66,7 @@ function loadContentFromFile(content) {
 
   if (content === 'home') {
     // Load external HTML file for "home"
-    fetch(content)
+    fetch('home-content.html')
       .then(response => {
         if (!response.ok) throw new Error('Network response was not ok');
         return response.text();
