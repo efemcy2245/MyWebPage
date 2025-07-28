@@ -190,3 +190,40 @@ section {
   cursor: pointer;
   line-height: 1.6;
 }
+
+/* EXTERNAL CV - Content*/
+
+.section {
+  margin-bottom: 30px;
+}
+
+.job-title {
+  font-weight: bold;
+}
+
+.company {
+  font-style: italic;
+  font-weight: bold;
+  color: #003366;
+}
+
+.date {
+  float: right;
+  font-weight: bold;
+}
+
+.entry {
+  margin-bottom: 20px;
+  clear: both;
+}
+
+.bullet {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+.edu-thesis {
+  font-size: 0.95em;
+  color: #444;
+  margin-top: 5px;
+}
