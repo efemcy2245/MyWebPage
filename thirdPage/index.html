@@ -1,160 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sidebar Layout</title>
+  <meta charset="UTF-8">
   <style>
-    /* General section styling */
-    section {
-      display: flex;
-      align-items: flex-start;
-      padding: 20px;
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
     }
 
-    /* Container for sidebar and content */
-    .container {
-      display: flex;
-      height: 600px;
-      width: 100%;
-      border: 3px solid black;
-      border-radius: 20px;
-      box-sizing: border-box;
-      overflow: hidden;
-    }
-
-    /* Sidebar styles */
-    .sidebar {
-      width: 250px;
-      background-color: #222;
-      color: white;
-      padding: 20px;
-      box-sizing: border-box;
-      border-right: 2px solid #444;
-      border-top-left-radius: 20px;
-      border-bottom-left-radius: 20px;
-      overflow-y: auto;
-    }
-
-    /* Menu items */
-    .menu-item {
-      cursor: pointer;
-      padding: 8px 12px;
-      border-radius: 5px;
-      margin: 4px 0;
-      user-select: none;
-    }
-
-    .menu-item:hover {
-      background-color: #444;
-    }
-
-    /* Subfolders are hidden by default */
-    .subfolder {
-      display: none;
-      margin-left: 20px;
-    }
-
-    .return-button {
-      margin-top: 20px;
-      background-color: #444;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-
-    .return-button:hover {
-      background-color: #666;
-    }
-
-    /* Content area */
-    .content {
-      flex: 1;
-      padding: 30px;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
-      overflow-y: auto;
-      box-sizing: border-box;
-      background-color: #f9f9f9;
-    }
-
-    /* Link styling */
-    a {
-      color: blue;
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
-
-  <section id="core">
-    <div class="container">
-      <div class="sidebar">
-        <div class="menu-item" onclick="toggle('CV-sub')">🧾 CV</div>
-        <div id="CV-sub" class="subfolder">
-          <div class="menu-item" onclick="loadExternalHTML('cv-content.html')">📄 Personal CV</div>
-        </div>
-
-        <div class="menu-item" onclick="toggle('projects-sub')">📁 Projects</div>
-        <div id="projects-sub" class="subfolder">
-          <div class="menu-item" onclick="loadExternalHTML('project.html')">📄 ProjectReport.pdf</div>
-        </div>
-
-        <div class="menu-item" onclick="toggle('dishes-sub')">🍽️ Dishes</div>
-        <div id="dishes-sub" class="subfolder">
-          <div class="menu-item" onclick="loadExternalHTML('dish.html')">🖼️ .jpg</div>
-        </div>
-
-        <div class="menu-item" onclick="toggle('drawings-sub')">🖼️ Drawings</div>
-        <div id="drawings-sub" class="subfolder">
-          <div class="menu-item" onclick="loadExternalHTML('image.html')">🖼️ .jpg</div>
-        </div>
-
-        <div class="menu-item return-button" onclick="loadExternalHTML('home-content.html')">About Me</div>
-      </div>
-
-      <div class="content" id="content">
-        <h2>About me</h2>
-        <p>
-          I have a strong inner drive to learn and master every aspect of the job—what I would describe as an internal hunger, an endless source of motivation.
-          I enjoy diving deep into topics and learning independently to build broad, cross-disciplinary knowledge.
-          You can find some of my projects at the following link:
-          <a href="https://efemcy2245.github.io/ForumMachineLearning/" target="_blank" rel="noopener noreferrer">
-            https://efemcy2245.github.io/ForumMachineLearning/
-          </a>.
-        </p>
-        <p>
-          Over the past month, I’ve taken the time to organize my thoughts on several key topics.
-          I’ve shared what I’ve learned by publishing my insights and perspectives.
-          This is a great opportunity for me—not only to demonstrate what I’m capable of,
-          but also to leave a piece of myself in the work.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <script>
-    function toggle(id) {
-      const element = document.getElementById(id);
-      element.style.display = element.style.display === "block" ? "none" : "block";
-    }
-
-    function loadExternalHTML(file) {
-      fetch(file)
-        .then(response => {
-          if (!response.ok) throw new Error("File not found");
-          return response.text();
-        })
-        .then(data => {
-          document.getElementById("content").innerHTML = data;
-        })
-        .catch(error => {
-          document.getElementById("content").innerHTML =
-            `<p style="color:red;">Error loading content: ${error.message}</p>`;
-        });
-    }
-  </script>
-
+  <h1 class="fade-in">Welcome to my website!</h1>
 </body>
 </html>
