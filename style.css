@@ -227,3 +227,36 @@ section {
   color: #444;
   margin-top: 5px;
 }
+
+
+
+/*Project*/
+#project-content {
+  font-family: Arial, sans-serif;
+  margin-top: 30px;
+}
+
+.project-entry {
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.tag {
+  color: #d00;
+  font-weight: bold;
+}
+
+.project-link {
+  color: red;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.skills {
+  color: #003366;
+  font-weight: bold;
+}
