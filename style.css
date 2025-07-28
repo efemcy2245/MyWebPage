@@ -262,3 +262,71 @@ section {
   color: #003366;
   font-weight: bold;
 }
+
+
+/* For Mobile Phone*/
+@media (max-width: 768px) {
+
+  body {
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  #main {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .square-image {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+
+  .text-block h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-block p {
+    font-size: 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    border-radius: 0;
+    border: none;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-radius: 0;
+    padding: 10px;
+  }
+
+  .menu-item {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .subfolder {
+    margin-left: 10px;
+  }
+
+  .content {
+    padding: 20px;
+    border-radius: 0;
+  }
+
+  footer.footer {
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+
+  .footer p {
+    line-height: 1.4;
+  }
+}
+

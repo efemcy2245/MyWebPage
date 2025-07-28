@@ -1,5 +1,7 @@
 /*For Body*/ 
 /* Set full-page background color to ice */
+/* set the modbile phone rendering */
+
 body {
   background-color: #e0f7fa; /* Ice blue */
   height: 100vh;
@@ -8,6 +10,21 @@ body {
 
 /*For Main*/
 /* Main section with background image */
+/*
+#main {
+  background-image: url('images/background_ice.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 30px;
+  overflow: hidden;
+} */
 #main {
   position: relative;
   display: flex;
@@ -41,7 +58,6 @@ body {
     background-position: 0% 50%;
   }
 }
-
 /* Style for the square image */
 .square-image {
   width: 180px;
@@ -175,4 +191,74 @@ section {
   font-size: 14px;
   cursor: pointer;
   line-height: 1.6;
+}
+
+/* EXTERNAL CV - Content*/
+
+.section {
+  margin-bottom: 30px;
+}
+
+.job-title {
+  font-weight: bold;
+}
+
+.company {
+  font-style: italic;
+  font-weight: bold;
+  color: #003366;
+}
+
+.date {
+  float: right;
+  font-weight: bold;
+}
+
+.entry {
+  margin-bottom: 20px;
+  clear: both;
+}
+
+.bullet {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+.edu-thesis {
+  font-size: 0.95em;
+  color: #444;
+  margin-top: 5px;
+}
+
+
+
+/*Project*/
+#project-content {
+  font-family: Arial, sans-serif;
+  margin-top: 30px;
+}
+
+.project-entry {
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.tag {
+  color: #d00;
+  font-weight: bold;
+}
+
+.project-link {
+  color: red;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.skills {
+  color: #003366;
+  font-weight: bold;
 }
