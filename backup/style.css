@@ -9,18 +9,36 @@ body {
 /*For Main*/
 /* Main section with background image */
 #main {
-  background-image: url('images/background.png');
-  background-size: 100% 100%; /* Stretch to fill the box */
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 300px;
-  width: 100%;
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  color: white;
-  border-radius: 30px;
+  gap: 30px;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   overflow: hidden;
+
+  background: linear-gradient(-45deg,
+    #e0f7fa,   /* ice aqua */
+    #d0e7f9,   /* light frost blue */
+    #b2ebf2,   /* glacier cyan */
+    #e0f2f1    /* polar mist */
+  );
+  background-size: 400% 400%;
+  animation: gradientBG 20s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Style for the square image */
