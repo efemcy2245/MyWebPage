@@ -23,6 +23,18 @@ body {
   overflow: hidden;
 }
 
+.square-image {
+  width: 150px;        /* You can change the size */
+  height: 150px;
+  object-fit: cover;   /* Ensures the image fills the square without distortion */
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 12px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  display: block;
+  margin: 0 auto;      /* Center horizontally if needed */
+}
+
 /* Image block inside main */
 .image-block {
   width: 200px;
