@@ -13,13 +13,13 @@
 <!-- This is the header with images-->
 <section id="main">
   <div class="image-block">
-    <img src="images/io-robot.png" alt="Image" class="square-image">
+    <img src="images/seneca.png" alt="Image" class="square-image">
   </div>
   <div class="text-block">
     <h2>Welcome to my personal WebSite</h2>
     <p>
-      Quote: "A gem cannot be polished without friction, nor a men perfected without trials."
-      Seneca 
+      Quote: "A gem cannot be polished without friction, nor a man perfected without trials."  
+       <span class="author">– Seneca</span>
     </p>
   </div>
 </section>
@@ -40,11 +40,11 @@
           <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/project.html')">📄 ProjectReport.pdf</div>
         </div>
 
-        <div class="menu-item" onclick="toggle('dishes-sub')">🍽️ Dishes</div>
+        <div class="menu-item" onclick="toggle('dishes-sub'); loadExternalHTML('external_HTML_file/dish.html')">🍽️ Dishes</div>
         <div id="dishes-sub" class="subfolder">
-          <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/dish.html')"><img src="https://flagcdn.com/w20/it.png" alt="Italian Flag" style="vertical-align: middle;"> Italian plates </div>
-          <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/dish.html')"> <img src="https://flagcdn.com/h20/jp.png" alt="Japanese Flag" style="vertical-align: middle;"> Japanese plates </div>
-          <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/dish.html')"> <img src="https://flagcdn.com/h20/cn.png" alt="Chinese Flag" style="vertical-align: middle;"> Chinese plates </div>
+          <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/italian_dish/italian.html')"><img src="https://flagcdn.com/w20/it.png" alt="Italian Flag" style="vertical-align: middle;"> Italian plates </div>
+          <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/japanese_dish/japanese.html')"> <img src="https://flagcdn.com/h20/jp.png" alt="Japanese Flag" style="vertical-align: middle;"> Japanese plates </div>
+          <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/chinese_dish/chinese.html')"> <img src="https://flagcdn.com/h20/cn.png" alt="Chinese Flag" style="vertical-align: middle;"> Chinese plates </div>
         </div>
 
         <div class="menu-item" onclick="toggle('drawings')">🖼️ Drawings</div>
@@ -98,7 +98,7 @@
 
 
 <section id="web_page">
-  <span><a href="secondPage/index.html">Go to Old page modify it</a></span> 
+  <span><a href="backup/index.html">Go to Old page modify it</a></span> 
   <span><a href="thirdPage/index.html">Examples code</a></span>  
 </section>
 

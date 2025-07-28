@@ -9,7 +9,7 @@ body {
 /*For Main*/
 /* Main section with background image */
 #main {
-  background-image: url('images/background.png');
+  background-image: url('images/background_ice.png');
   background-size: 100% 100%; /* Stretch to fill the box */
   background-position: center;
   background-repeat: no-repeat;
