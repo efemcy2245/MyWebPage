@@ -30,16 +30,48 @@
 <section id="core">
     <div class="container">
       <div class="sidebar">
+        <!-- CV -->
         <div class="menu-item" onclick="toggle('CV-sub')">🧾 CV</div>
         <div id="CV-sub" class="subfolder">
           <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/cv-content.html')">📄 Personal CV</div>
         </div>
 
+        <!-- Project -->
         <div class="menu-item" onclick="toggle('projects-sub')">📁 Projects</div>
         <div id="projects-sub" class="subfolder">
           <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/project.html')">📄 Project on GitHub</div>
         </div>
+        
+        <!-- Knowledge -->
+        <div class="menu-item" onclick="toggle('knowledge-sub')">🧠 Knowledge</div>
+        <div id="knowledge-sub" class="subfolder">
 
+          <div class="menu-item" onclick="toggle('ai-sub')">🤖 AI</div>
+          <div id="ai-sub" class="subfolder">
+            <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/knowledge/ai/machine_learning.html')">Machine Learning & Deep Learning</div>
+            <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/knowledge/ai/neural_networks.html')">Neural Networks (CNN, RNN, LSTM)</div>
+            <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/knowledge/ai/computer_vision.html')">Computer Vision & NLP</div>
+            <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/knowledge/ai/model_deployment.html')">Model Evaluation & Deployment</div>
+          </div>
+
+          <div class="menu-item" onclick="toggle('cloud-sub')">☁️ Cloud</div>
+          <div id="cloud-sub" class="subfolder">
+            <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/knowledge/cloud/aws.html')">AWS (EC2, S3, Lambda, SageMaker)</div>
+            <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/knowledge/cloud/azure.html')">Azure Fundamentals</div>
+            <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/knowledge/cloud/docker.html')">Docker & Containers</div>
+            <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/knowledge/cloud/ci_cd.html')">CI/CD Pipelines</div>
+          </div>
+
+          <div class="menu-item" onclick="toggle('cyber-sub')">🛡️ Cybersecurity</div>
+          <div id="cyber-sub" class="subfolder">
+            <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/knowledge/cybersecurity/network_security.html')">Network Security Principles</div>
+            <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/knowledge/cybersecurity/encryption.html')">Encryption & Authentication</div>
+            <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/knowledge/cybersecurity/vulnerability.html')">Vulnerability Assessment</div>
+            <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/knowledge/cybersecurity/secure_coding.html')">Secure Coding Practices</div>
+          </div>
+
+        </div>
+        <!-- commented
         <div class="menu-item" onclick="toggle('dishes-sub'); loadExternalHTML('external_HTML_file/dish.html')">🍽️ Dishes</div>
         <div id="dishes-sub" class="subfolder">
           <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/italian_dish/italian.html')"><img src="https://flagcdn.com/w20/it.png" alt="Italian Flag" style="vertical-align: middle;"> Italian plates </div>
@@ -51,7 +83,9 @@
         <div id="drawings-sub" class="subfolder">
           <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/image.html')">my drawing</div>
         </div>
+        -->
 
+        <!-- Contact -->
         <div class="menu-item" onclick="toggle('contact')">📧 Contact</div>
         <div id="contact" class="subfolder">
           <div class="menu-item" onclick="loadExternalHTML('external_HTML_file/contact.html')">Details</div>
